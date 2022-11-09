@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+
+<!-- bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<!-- bundle -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="./stylesheet/all.css">
+<!-- font icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<title>flexbook</title>
+</head>
+<body class="bg-gray">
+
+
+ <!-- login -->
+ <div class="container d-flex flex-column  flex-lg-row justify-content-evenly mt-5 pt-5">
+    <!-- heading -->
+    <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+        <h1 class="text-primary fw-bold f-0">Flex book</h1>
+        <p class="w-75 mx-auto mx-lg-0 f-4">Flexbook helps you connet and share with the people in your life.</p>
+    </div>
+    <!-- form -->
+    <div style="max-width:28rem; width:100%" class="mx-auto">
+       <div class=" border-0 shadow rounded p-3 bg-white">
+         <input type="email" class="form-control my-3" placeholder="Email address or phone number">
+
+         <input type="password" class="form-control my-3"
+         placeholder="passrowd">
+
+         <a href="./1.html" type="button" class="btn btn-primary w-100 my-3">Login</a>
+         
+         <a href="#" class="text-decoration-none text-center">
+            <p>Forgetten password?</p>
+         </a>
+         <!-- create form -->
+         <hr>
+         <div class="text-center">
+            <button type="button" class="btn btn-success btn-lg"
+            data-bs-toggle="modal" data-bs-target="#creatAccount"
+            >Create new Account</button>
+         </div>
+       
+        
+        <!-- Modal -->
+        <div class="modal fade" id="creatAccount" tabindex="-1" aria-labelledby="creatAccountLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                    <div>
+                        <h2>Sing up</h2>
+                        <p class="fs-7 text-muted">It's quick and easy.</p>
+                    </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <form >
+                    <!-- email & password -->
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control"
+                            placeholder="surname">
+                        </div>
+                    </div>
+                    <!-- email & pass -->
+                    <input type="email" class="form-control my-3"  placeholder="Model number or Email password">
+                    <input type="password" class="form-control my-3"   placeholder="new password">
+                    <!-- DOB -->
+                    <div class="row my-3">
+                        <span class="fs-7 text-muted">Date of birth
+                        <i class="bi bi-question-circle-fill" type="button"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right here"
+                        ></i>
+                        </span>
+                        <div class="col">
+                            <select class="form-select">
+                                <option value="1">one</option>
+                                <option value="2">two</option>
+                                <option value="3">three</option>
+                            </select>
+                       </div>
+                       <div class="col">
+                           <select class="form-select">
+                               <option value="1">one</option>
+                               <option value="2">two</option>
+                               <option value="3">three</option>
+                           </select>
+                      </div>
+                      <div class="col">
+                       <select class="form-select">
+                           <option value="1">one</option>
+                           <option value="2">two</option>
+                           <option value="3">three</option>
+                       </select>
+                       </div>
+                    </div>
+             
+                    <!-- gender -->
+                    <div class="row my-3">
+                        <span class="fs-7 text-muted">Gender
+                            <i class="bi bi-question-circle-fill" type="button"
+                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right here"
+                            ></i>
+                            </span>
+            
+                    <div class="col">
+                        <div class="border rounded p-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Male
+                            </label>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Female
+                            </label>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              Costom
+                            </label>
+                          </div>
+                    </div>
+                    </div>
+                    <!-- gender select -->
+                    <div class="d-none" id="genderSelect">
+                        <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="my-3">
+                           <span class="text-muted fs-7">
+                            your pronoun is visible to everyone. 
+                           </span>
+                           <input type="text" class="form-control" placeholder="Gender(optional)">
+                        </div>
+                    </div>
+                    <!-- disclaimer -->
+                    <div>
+                        <span class="text-muted fs-7">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        </span>
+                    </div>
+                    <!-- btn -->
+                   <div class="text-center mt-3">
+                     <button type="button" class="btn btn-success btn-lg">Sing up</button>
+                   </div>
+                   
+                  </form>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+       </div>
+       <div class="my-5 pb-5 text-center">
+        <p class="fw-bold">
+           <a href="#"  class="text-decoration-none text-dark"
+           >Create a page</a> 
+           <span class="fw-normal">for a celebrity. bane or busness </span>
+        </p>
+   </div>
+       
+    </div>
+
+   
+ </div>
+
+
+ <!-- footer -->
+ <footer class="bg-white p-4 text-muted">
+    <div class="container">
+        <!-- langauge -->
+        <div class="d-flex flex-wrap">
+            <p class="mx-2 mb-0 fs-7">英文</p>
+            <p class="mx-2 mb-0 fs-7">太文</p>
+            <p class="mx-2 mb-0 fs-7">中文</p>
+            <p class="mx-2 mb-0 fs-7">韓文</p>
+            <p class="mx-2 mb-0 fs-7">日文</p>
+        </div>
+        <hr>
+        <!-- active -->
+        <div class="d-flex flex-wrap">
+            <p class="mx-2 mb-0 fs-7">Sing up</p>
+            <p class="mx-2 mb-0 fs-7">Login</p>
+            <p class="mx-2 mb-0 fs-7">Messeger</p>
+            <p class="mx-2 mb-0 fs-7">Flexbook List</p>
+            <p class="mx-2 mb-0 fs-7">Watch</p>
+        </div>
+        <!-- copy -->
+        <div class="d-flex mt-4">
+            <p class="mx-2 mb-0 fs-7">Flexbook 2022.</p>
+        </div>
+    </div>
+ </footer>
+
+
+
+
+ <!-- javascript -->
+ <script src="./main.js"></script>
+ <!-- bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

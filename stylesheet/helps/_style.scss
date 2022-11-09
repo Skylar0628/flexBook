@@ -1,0 +1,109 @@
+.fs-0{
+    font-size: 4rem;
+}
+
+.fs-7{
+    font-size: 0.8rem;
+}
+
+.bg-gray{
+    background-color: #f0f2f5;
+}
+
+// nav__btn
+
+.nav__btn button:hover{
+    background: #f0f2f5;
+}
+
+.nav__btn button:hover i{
+    color: #0d6efd !important;
+}
+
+.nav__active{
+    position: relative;
+   
+.nav__active i{
+    color: #0d6efd !important;
+}
+}
+
+.nav__active::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color:#0d6efd ;
+}
+
+
+@media (min-width:62em){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+// all inppit fouce-none
+
+input:focus{
+    outline: none;
+}
+
+// chat box
+.modal-content i:hover {
+ color: #0d6efd ;
+}
+
+// Edit
+.Edit-button{
+    opacity: 0;
+}
+.Edit-button:hover{
+    opacity: 1;
+}
+
+.Edit-heading:hover .Edit-button{
+    opacity: 1;
+}
+
+// scrollbar
+.scrolbar:hover{
+    overflow: auto !important;
+}
+
+// modalbtn
+
+.primary_btn:hover{
+    color: $primary !important;
+}
+
+// stroy
+
+.stroy:hover{
+   opacity: 0.8;
+}
+
+// commet
+.post__commet .accordion-button::after{
+   margin-left: 0 !important;
+   display: none !important;
+}
+
+
+.post__commet .accordion-button::hover{
+     background: transparent !important;
+     border-color: transparent !important;
+ }
+
+ .post__commet .accordion-button::not(.collapsed){
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
+
+
